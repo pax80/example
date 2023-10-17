@@ -5,4 +5,7 @@ return {
   {
     "aklt/plantuml-syntax",
   },
+  {
+    "tyru/open-browser.vim",
+  },
 }
