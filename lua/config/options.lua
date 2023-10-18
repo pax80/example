@@ -2,6 +2,12 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.g.netrw_banner = 0 -- Hide banner
+vim.g.netrw_browse_split = 4 -- Open in previous window
+vim.g.netrw_liststyle = 3
+vim.g.netrw_browse_split = 4
+vim.g.netrw_altv = 1
+
 vim.opt.laststatus = 3
 
 vim.opt.nu = true
@@ -43,7 +49,7 @@ vim.opt.cursorline = true
 vim.opt.cursorlineopt = "line"
 -- vim.cmd("hi CursorLine guibg=#a80700 ctermbg=500 ")
 --vim.cmd("hi CursorLine guibg=#603000 ctermbg=500 ")
-vim.cmd("hi CursorLine guibg=#252560 gui=underline")
+-- vim.cmd("hi CursorLine guibg=#252560 gui=underline")
 -- vim.cmd("hi CursorLine guibg=#203000 ctermbg=500 ")
 --vim.cmd("hi CursorLine guibg=#40E0D0 ctermbg=500 ")
 -- vim.api.nvim_set_hl(0, "Normal", {bg=Yellow })
@@ -53,3 +59,21 @@ vim.cmd("hi CursorLine guibg=#252560 gui=underline")
 
 -- this should show the lower bannen always on the bottom
 vim.opt.showtabline = 3
+
+-- vim.opt.nvim_set_hl(0, "WinSeparator", { guifg = "#ff5733" })
+vim.api.nvim_set_hl(0, "WinSeparator", { fg = "orange", bold = true })
+-- vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#565f89", bold = true })
+-- highlight WinSeparator guifg=orange
+--
+--
+--
+vim.opt.fillchars = {
+  horiz = "-",
+  horizup = "┻",
+  horizdown = "┳",
+  --  vert = "┃",
+  vert = "|",
+  vertleft = "┫",
+  vertright = "┣",
+  verthoriz = "╋",
+}
