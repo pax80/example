@@ -1,6 +1,5 @@
 vim.g.NetrwIsOpen = 0
 vim.keymap.set("i", "<leader>nn", "<ESC>:lua ToogleFolder()<CR>i")
--- vim.api.nvim_set_keymap("n", "<TAB>", "<cmd>lua require('plugins/LazyComp/LazyComp').getFile()<CR>")
 
 vim.keymap.set("n", "<leader>nn", ":lua ToogleFolder()<CR>")
 
@@ -19,5 +18,3 @@ function ToogleFolder()
     vim.cmd("silent Vexplore")
   end
 end
-
--- vim.cmd(":command! ToogleFolder :call ToogleFolder()")
